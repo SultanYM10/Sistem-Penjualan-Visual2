@@ -12,6 +12,7 @@ object Form1: TForm1
   Font.Style = []
   Menu = mm1
   OldCreateOrder = False
+  OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
   object lbl1: TLabel
@@ -69,9 +70,6 @@ object Form1: TForm1
       Caption = 'FILE'
       object LOGIN1: TMenuItem
         Caption = 'LOGIN'
-      end
-      object LOGOUT1: TMenuItem
-        Caption = 'LOGOUT'
       end
     end
     object DATAMASTER1: TMenuItem

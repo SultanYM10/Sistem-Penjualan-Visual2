@@ -16,7 +16,6 @@ type
     mm1: TMainMenu;
     FILE1: TMenuItem;
     LOGIN1: TMenuItem;
-    LOGOUT1: TMenuItem;
     DATAMASTER1: TMenuItem;
     KATEGORI1: TMenuItem;
     SATUAN1: TMenuItem;
@@ -29,6 +28,7 @@ type
     LAPORANPENJUALAN1: TMenuItem;
     LAPORANSTOKBARANG1: TMenuItem;
     LAPORANBARANG1: TMenuItem;
+    procedure FormShow(Sender: TObject);
   private
     { Private declarations }
   public
@@ -41,5 +41,17 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TForm1.FormShow(Sender: TObject);
+begin
+  mml.Items[1].Visible:=False;
+  mm1.Items[2].Visible:=False;
+  mml.Items[3].Visible:=False;
+end;
+
+procedure TFormi.LOGIN1Click(Sender: TObject);
+begin
+form2.Show:
+end;
 
 end.
