@@ -66,18 +66,21 @@ begin
   Form1.mm1.Items[1].Visible := True;
   Form1.mm1.Items[2].Visible := False;
   Form1.mm1.Items[3].Visible := False;
+  ShowMessage('Selamat! Anda Berhasil Login Sebagai Admin!');
 end
 else if (AnsiCompareText(edt1.Text, 'kasir') = 0) then
 begin
   Form1.mm1.Items[1].Visible := False;
   Form1.mm1.Items[2].Visible := True;
   Form1.mm1.Items[3].Visible := False;
+  ShowMessage('Selamat! Anda Berhasil Login Sebagai Kasir!');
 end
 else if (AnsiCompareText(edt1.Text, 'pemilik') = 0) then
 begin
   Form1.mm1.Items[1].Visible := False;
   Form1.mm1.Items[2].Visible := False;
   Form1.mm1.Items[3].Visible := True;
+  ShowMessage('Selamat! Anda Berhasil Login Sebagai Pemilik!');
 end
 else
 begin

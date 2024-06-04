@@ -4,7 +4,7 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, StdCtrls;
+  Dialogs, StdCtrls, Grids, DBGrids;
 
 type
   TForm3 = class(TForm)
@@ -13,6 +13,7 @@ type
     btn1: TButton;
     btn2: TButton;
     btn3: TButton;
+    dbgrd1: TDBGrid;
   private
     { Private declarations }
   public
