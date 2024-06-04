@@ -29,7 +29,6 @@ type
     procedure LOGOUT1Click(Sender: TObject);
   private
     { Private declarations }
-    procedure ToggleLoginMenu(isLoggedIn: Boolean);
   public
     { Public declarations }
   end;
@@ -43,39 +42,23 @@ uses Unit2;
 
 {$R *.dfm}
 
-procedure TForm1.ToggleLoginMenu(isLoggedIn: Boolean);
-begin
-  LOGIN1.Visible := not isLoggedIn;
-  LOGOUT1.Visible := isLoggedIn;
-  DATAMASTER1.Visible := isLoggedIn;
-  KATEGORI1.Visible := isLoggedIn;
-  SATUAN1.Visible := isLoggedIn;
-  SUPPLIER1.Visible := isLoggedIn;
-  CUSTOMER1.Visible := isLoggedIn;
-  RANSAKSI1.Visible := isLoggedIn;
-  PENJUALAN1.Visible := isLoggedIn;
-  PEMBELIAN1.Visible := isLoggedIn;
-  LAPORAN1.Visible := isLoggedIn;
-  LAPORANPENJUALAN1.Visible := isLoggedIn;
-  LAPORANSTOKBARANG1.Visible := isLoggedIn;
-  LAPORANBARANG1.Visible := isLoggedIn;
-end;
-
 procedure TForm1.FormShow(Sender: TObject);
 begin
-  ToggleLoginMenu(False);
+  mm1.Items[1].Visible:=False;
+  mm1.Items[2].Visible:=False;
+  mm1.Items[3].Visible:=False;
 end;
 
 procedure TForm1.LOGIN1Click(Sender: TObject);
 begin
   form2.Show;
-  ToggleLoginMenu(True);
 end;
 
 procedure TForm1.LOGOUT1Click(Sender: TObject);
 begin
-  ToggleLoginMenu(False);
+  mm1.Items[1].Visible:=False;
+  mm1.Items[2].Visible:=False;
+  mm1.Items[3].Visible:=False;
 end;
 
 end.
-

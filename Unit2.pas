@@ -80,7 +80,7 @@ begin
 end
 else
 begin
-
+  MessageDlg('Login gagal. Periksa username dan password Anda.', mtError, [mbOK], 0);
 end;
 Form2.Close;
 end;
