@@ -1,4 +1,4 @@
-unit Unit1;
+unit Unit2;
 
 interface
 
@@ -7,7 +7,12 @@ uses
   Dialogs, Menus, StdCtrls, ExtCtrls;
 
 type
-  TForm1 = class(TForm)
+  TForm2 = class(TForm)
+    lbl1: TLabel;
+    pnl1: TPanel;
+    lbl2: TLabel;
+    edt1: TEdit;
+    btn1: TButton;
     mm1: TMainMenu;
     FILE1: TMenuItem;
     LOGIN1: TMenuItem;
@@ -23,8 +28,8 @@ type
     LAPORANPENJUALAN1: TMenuItem;
     LAPORANSTOKBARANG1: TMenuItem;
     LAPORANBARANG1: TMenuItem;
-    procedure FormShow(Sender: TObject);
-    procedure LOGIN1Click(Sender: TObject);
+    LOGOUT1: TMenuItem;
+    procedure LOGOUT1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -32,24 +37,15 @@ type
   end;
 
 var
-  Form1: TForm1;
+  Form2: TForm2;
 
 implementation
 
-uses Unit2;
-
 {$R *.dfm}
 
-procedure TForm1.FormShow(Sender: TObject);
+procedure TForm2.LOGOUT1Click(Sender: TObject);
 begin
-  mm1.Items[1].Visible:=False;
-  mm1.Items[2].Visible:=False;
-  mm1.Items[3].Visible:=False;
-end;
-
-procedure TForm1.LOGIN1Click(Sender: TObject);
-begin
-  form2.Show;
+  Form2.Close;
 end;
 
 end.
