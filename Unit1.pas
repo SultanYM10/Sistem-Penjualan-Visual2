@@ -23,8 +23,10 @@ type
     LAPORANPENJUALAN1: TMenuItem;
     LAPORANSTOKBARANG1: TMenuItem;
     LAPORANBARANG1: TMenuItem;
+    LOGOUT1: TMenuItem;
     procedure FormShow(Sender: TObject);
     procedure LOGIN1Click(Sender: TObject);
+    procedure LOGOUT1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -50,6 +52,13 @@ end;
 procedure TForm1.LOGIN1Click(Sender: TObject);
 begin
   form2.Show;
+end;
+
+procedure TForm1.LOGOUT1Click(Sender: TObject);
+begin
+  mm1.Items[1].Visible:=False;
+  mm1.Items[2].Visible:=False;
+  mm1.Items[3].Visible:=False;
 end;
 
 end.

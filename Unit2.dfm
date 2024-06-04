@@ -12,6 +12,7 @@ object Form2: TForm2
   Font.Style = []
   Menu = mm1
   OldCreateOrder = False
+  OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
   object lbl1: TLabel
@@ -60,6 +61,7 @@ object Form2: TForm2
       Height = 41
       Caption = 'LOGIN'
       TabOrder = 1
+      OnClick = btn1Click
     end
   end
   object mm1: TMainMenu

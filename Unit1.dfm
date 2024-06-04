@@ -24,6 +24,10 @@ object Form1: TForm1
         Caption = 'LOGIN'
         OnClick = LOGIN1Click
       end
+      object LOGOUT1: TMenuItem
+        Caption = 'LOGOUT'
+        OnClick = LOGOUT1Click
+      end
     end
     object DATAMASTER1: TMenuItem
       Caption = 'DATA MASTER'
