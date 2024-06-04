@@ -53,6 +53,7 @@ end;
 
 procedure TForm2.FormShow(Sender: TObject);
 begin
+  mm1.Items[0].Visible:=False;
   mm1.Items[1].Visible:=False;
   mm1.Items[2].Visible:=False;
   mm1.Items[3].Visible:=False;
