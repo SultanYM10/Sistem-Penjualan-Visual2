@@ -29,6 +29,7 @@ type
     LAPORANSTOKBARANG1: TMenuItem;
     LAPORANBARANG1: TMenuItem;
     procedure FormShow(Sender: TObject);
+    procedure LOGIN1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -40,18 +41,20 @@ var
 
 implementation
 
+uses Unit2;
+
 {$R *.dfm}
 
 procedure TForm1.FormShow(Sender: TObject);
 begin
-  mml.Items[1].Visible:=False;
+  mm1.Items[1].Visible:=False;
   mm1.Items[2].Visible:=False;
-  mml.Items[3].Visible:=False;
+  mm1.Items[3].Visible:=False;
 end;
 
-procedure TFormi.LOGIN1Click(Sender: TObject);
+procedure TForm1.LOGIN1Click(Sender: TObject);
 begin
-form2.Show:
+  form2.Show;
 end;
 
 end.

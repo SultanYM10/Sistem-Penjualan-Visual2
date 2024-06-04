@@ -70,6 +70,7 @@ object Form1: TForm1
       Caption = 'FILE'
       object LOGIN1: TMenuItem
         Caption = 'LOGIN'
+        OnClick = LOGIN1Click
       end
     end
     object DATAMASTER1: TMenuItem
