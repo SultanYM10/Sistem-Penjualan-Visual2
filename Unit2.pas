@@ -15,7 +15,6 @@ type
     btn1: TButton;
     mm1: TMainMenu;
     FILE1: TMenuItem;
-    LOGIN1: TMenuItem;
     DATAMASTER1: TMenuItem;
     KATEGORI1: TMenuItem;
     SATUAN1: TMenuItem;
@@ -61,19 +60,19 @@ end;
 
 procedure TForm2.btn1Click(Sender: TObject);
 begin
-     if edt1.Text = 'admin' then
+if (AnsiCompareText(edt1.Text, 'admin') = 0) then
 begin
   Form1.mm1.Items[1].Visible := True;
   Form1.mm1.Items[2].Visible := False;
   Form1.mm1.Items[3].Visible := False;
 end
-else if edt1.Text = 'kasir' then
+else if (AnsiCompareText(edt1.Text, 'kasir') = 0) then
 begin
   Form1.mm1.Items[1].Visible := False;
   Form1.mm1.Items[2].Visible := True;
   Form1.mm1.Items[3].Visible := False;
 end
-else if edt1.Text = 'pemilik' then
+else if (AnsiCompareText(edt1.Text, 'pemilik') = 0) then
 begin
   Form1.mm1.Items[1].Visible := False;
   Form1.mm1.Items[2].Visible := False;
@@ -81,9 +80,9 @@ begin
 end
 else
 begin
+
 end;
 Form2.Close;
-
 end;
 
 end.
