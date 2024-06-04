@@ -3,7 +3,7 @@ object Form1: TForm1
   Top = 288
   Width = 416
   Height = 314
-  Caption = 'Form1'
+  Caption = 'DASHBOARD'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
