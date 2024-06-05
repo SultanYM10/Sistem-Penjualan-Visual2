@@ -114,5 +114,6 @@ object Form3: TForm3
     Height = 41
     Caption = 'CARI'
     TabOrder = 6
+    OnClick = btn4Click
   end
 end

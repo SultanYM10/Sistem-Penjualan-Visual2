@@ -21,6 +21,7 @@ type
     procedure btn2Click(Sender: TObject);
     procedure dbgrd1CellClick(Column: TColumn);
     procedure btn3Click(Sender: TObject);
+    procedure btn4Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -86,6 +87,16 @@ begin
  Open;
 end;
   ShowMessage('Data Berhasil di Hapus!');
+end;
+
+procedure TForm3.btn4Click(Sender: TObject);
+begin
+  with DataModule4.Zkategori do
+  begin
+    SQL.Clear;
+    SQL.Add('select * from kategori where name like "%' + edt2.Text + '%"');
+    Open;
+  end;
 end;
 
 end.
