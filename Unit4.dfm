@@ -4,35 +4,33 @@ object DataModule4: TDataModule4
   Top = 274
   Height = 284
   Width = 449
-  object ZConnection1: TZConnection
-    ControlsCodePage = cGET_ACP
-    Properties.Strings = (
-      'RawStringEncoding=DB_CP')
-    Connected = True
-    DisableSavepoints = False
-    HostName = 'localhost'
-    Port = 3306
-    Database = 'db_penjualan'
-    User = 'root'
-    Protocol = 'mysql'
-    LibraryLocation = 
-      'C:\Users\USER\OneDrive\Desktop\File Kuliah Sem 4\Visual 2\Tugas ' +
-      'Menu CRUD Delphi\Sistem-Penjualan-Visual2\libmysql.dll'
-    Left = 40
-    Top = 24
+  object dskategori: TDataSource
+    DataSet = Zkategori1
+    Left = 104
+    Top = 80
   end
-  object Zkategori: TZQuery
+  object Zkategori1: TZQuery
     Connection = ZConnection1
     Active = True
     SQL.Strings = (
       'SELECT * FROM kategori;')
     Params = <>
-    Left = 112
+    Left = 104
     Top = 24
   end
-  object dskategori: TDataSource
-    DataSet = Zkategori
-    Left = 112
-    Top = 80
+  object ZConnection1: TZConnection
+    ControlsCodePage = cGET_ACP
+    AutoEncodeStrings = False
+    Connected = True
+    HostName = 'localhost'
+    Port = 3306
+    Database = 'db_penjualan'
+    User = 'root'
+    Protocol = 'mysql-5'
+    LibraryLocation = 
+      'C:\Users\USER\OneDrive\Desktop\File Kuliah Sem 4\Visual 2\Tugas ' +
+      'Menu CRUD Delphi\Sistem-Penjualan-Visual2\libmysql.dll'
+    Left = 40
+    Top = 24
   end
 end

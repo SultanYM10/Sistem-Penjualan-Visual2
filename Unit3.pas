@@ -14,6 +14,9 @@ type
     btn2: TButton;
     btn3: TButton;
     dbgrd1: TDBGrid;
+    lbl1: TLabel;
+    edt2: TEdit;
+    btn4: TButton;
   private
     { Private declarations }
   public
@@ -24,6 +27,9 @@ var
   Form3: TForm3;
 
 implementation
+
+uses
+  Unit4;
 
 {$R *.dfm}
 

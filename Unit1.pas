@@ -27,6 +27,7 @@ type
     procedure FormShow(Sender: TObject);
     procedure LOGIN1Click(Sender: TObject);
     procedure LOGOUT1Click(Sender: TObject);
+    procedure KATEGORI1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -38,7 +39,8 @@ var
 
 implementation
 
-uses Unit2;
+uses Unit2,
+  Unit3;
 
 {$R *.dfm}
 
@@ -59,6 +61,11 @@ begin
   mm1.Items[1].Visible:=False;
   mm1.Items[2].Visible:=False;
   mm1.Items[3].Visible:=False;
+end;
+
+procedure TForm1.KATEGORI1Click(Sender: TObject);
+begin
+  form3.show;
 end;
 
 end.

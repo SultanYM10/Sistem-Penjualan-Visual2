@@ -3,7 +3,7 @@ object Form3: TForm3
   Top = 172
   Width = 676
   Height = 503
-  Caption = 'Form3'
+  Caption = 'Kategori'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -19,6 +19,19 @@ object Form3: TForm3
     Width = 153
     Height = 16
     Caption = 'Masukkan Nama Kategori :'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object lbl1: TLabel
+    Left = 26
+    Top = 339
+    Width = 250
+    Height = 16
+    Caption = 'Masukkan Nama Kategori yang ingin di cari:'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -13
@@ -58,15 +71,31 @@ object Form3: TForm3
     TabOrder = 3
   end
   object dbgrd1: TDBGrid
-    Left = 34
+    Left = 31
     Top = 144
-    Width = 593
-    Height = 177
+    Width = 599
+    Height = 161
+    DataSource = DataModule4.dskategori
     TabOrder = 4
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+  end
+  object edt2: TEdit
+    Left = 287
+    Top = 337
+    Width = 281
+    Height = 21
+    TabOrder = 5
+  end
+  object btn4: TButton
+    Left = 287
+    Top = 368
+    Width = 81
+    Height = 41
+    Caption = 'CARI'
+    TabOrder = 6
   end
 end

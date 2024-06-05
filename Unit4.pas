@@ -8,9 +8,9 @@ uses
 
 type
   TDataModule4 = class(TDataModule)
-    ZConnection1: TZConnection;
-    Zkategori: TZQuery;
     dskategori: TDataSource;
+    Zkategori1: TZQuery;
+    ZConnection1: TZConnection;
   private
     { Private declarations }
   public
