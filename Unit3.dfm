@@ -71,6 +71,7 @@ object Form3: TForm3
     Height = 41
     Caption = 'DELETE'
     TabOrder = 3
+    OnClick = btn3Click
   end
   object dbgrd1: TDBGrid
     Left = 31

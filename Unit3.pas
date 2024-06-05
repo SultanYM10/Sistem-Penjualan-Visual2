@@ -20,6 +20,7 @@ type
     procedure btn1Click(Sender: TObject);
     procedure btn2Click(Sender: TObject);
     procedure dbgrd1CellClick(Column: TColumn);
+    procedure btn3Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -58,7 +59,7 @@ begin
     ExecSQL;
 
     SQL.Clear;
-    SQL.Add('select from kategori');
+    SQL.Add('select * from kategori');
     Open;
   end;
   showmessage('Data Berhasil di Update!');
@@ -68,6 +69,23 @@ procedure TForm3.dbgrd1CellClick(Column: TColumn);
 begin
   edt1.Text:= DataModule4.Zkategori.Fields[1].AsString;
   a:= DataModule4.Zkategori.Fields[0].AsString;
+end;
+
+
+
+procedure TForm3.btn3Click(Sender: TObject);
+begin
+with DataModule4.Zkategori do
+begin
+ SQL.Clear;
+ SQL.Add('delete from kategori where id="'+a+'"');
+ ExecSQL;
+
+ SQL.Clear;
+ SQL.Add('select * from kategori');
+ Open;
+end;
+  ShowMessage('Data Berhasil di Hapus!');
 end;
 
 end.
