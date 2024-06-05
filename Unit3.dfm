@@ -53,6 +53,7 @@ object Form3: TForm3
     Height = 41
     Caption = 'INSERT'
     TabOrder = 1
+    OnClick = btn1Click
   end
   object btn2: TButton
     Left = 292
@@ -61,6 +62,7 @@ object Form3: TForm3
     Height = 41
     Caption = 'UPDATE'
     TabOrder = 2
+    OnClick = btn2Click
   end
   object btn3: TButton
     Left = 389
@@ -82,6 +84,20 @@ object Form3: TForm3
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+    OnCellClick = dbgrd1CellClick
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'id'
+        Width = 32
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'name'
+        Width = 550
+        Visible = True
+      end>
   end
   object edt2: TEdit
     Left = 287

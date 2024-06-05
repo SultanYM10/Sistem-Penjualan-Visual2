@@ -9,8 +9,16 @@ uses
 type
   TDataModule4 = class(TDataModule)
     dskategori: TDataSource;
-    Zkategori1: TZQuery;
+    Zkategori: TZQuery;
     ZConnection1: TZConnection;
+    Zsatuan: TZQuery;
+    Zkategori3: TZQuery;
+    Zkategori4: TZQuery;
+    Zkategori5: TZQuery;
+    dssatuan: TDataSource;
+    dsbarang: TDataSource;
+    dssupplier: TDataSource;
+    dsuser: TDataSource;
   private
     { Private declarations }
   public
